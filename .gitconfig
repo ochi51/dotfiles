@@ -1,2 +1,7 @@
+[user]
+    name  = ochi51
+    email = ochiai07@gmail.com
+[color]
+    ui = true
 [core]
 	excludesfile = /Users/ochi51/.gitignore_global
