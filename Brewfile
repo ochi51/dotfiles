@@ -115,6 +115,8 @@ tap 'romkatv/powerlevel10k'
   ## Utility
   # Perl lib for reading and writing EXIF metadata
   brew 'exiftool'
+  # Tools and libraries to manipulate images in many formats
+  brew 'imagemagick'
 ### }}}
 
 ### Video {{{
