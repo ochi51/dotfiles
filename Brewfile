@@ -194,6 +194,14 @@ tap 'romkatv/powerlevel10k'
   ## Node.js
   # Platform built on V8 to build network applications
   brew 'node'
+  # JavaScript package manager
+  brew 'yarn'
+  # AST-based pattern checker for JavaScript
+  brew 'eslint'
+  # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+  brew 'prettier'
+  # Standard Tooling for Vue.js Development
+  brew 'vue-cli'
 
   ## PHP
   brew 'php'
