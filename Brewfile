@@ -185,7 +185,9 @@ tap 'romkatv/powerlevel10k'
   # OS X status bar application for Github
   # cask 'gitee'
   # The legendary Git GUI client
-  cask 'gitkraken'
+  # cask 'gitkraken'
+  # Graphical client for Git version control
+  brew 'sourcetree'
 ### }}}
 
 ### Programming Language {{{
