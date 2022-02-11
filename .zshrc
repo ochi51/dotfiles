@@ -133,3 +133,8 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # Ruby rbenv PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# # Go goenv PATH
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"

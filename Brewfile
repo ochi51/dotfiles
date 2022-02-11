@@ -214,6 +214,12 @@ tap 'romkatv/powerlevel10k'
   # Compile and install Ruby for rbenv
   brew 'ruby-build'
 
+  ## Golang
+  # Open source programming language to build simple/reliable/efficient software
+  # brew 'golang' # git clone https://github.com/syndbg/goenv.git ~/.goenv
+  # Go version management
+  brew 'goenv'
+
   ## YAML
   # Linter for YAML files
   brew 'yamllint'
