@@ -187,7 +187,7 @@ tap 'romkatv/powerlevel10k'
   # The legendary Git GUI client
   # cask 'gitkraken'
   # Graphical client for Git version control
-  brew 'sourcetree'
+  cask 'sourcetree'
 ### }}}
 
 ### Programming Language {{{
