@@ -228,6 +228,10 @@ tap 'romkatv/powerlevel10k'
   # Go version management
   brew 'goenv'
 
+  ## C Family
+  # GNU compiler collection
+  brew 'gcc'
+
   ## YAML
   # Linter for YAML files
   brew 'yamllint'
