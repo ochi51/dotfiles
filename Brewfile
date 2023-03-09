@@ -33,6 +33,8 @@ tap 'romkatv/powerlevel10k'
   brew 'libtool'
   # SSL/TLS cryptography library
   brew 'openssl'
+  # Simple tool for making locally-trusted development certificates.
+  brew 'mkcert'
 
   ## Monitoring
   # macOS system monitor in your menu bar
@@ -85,6 +87,8 @@ tap 'romkatv/powerlevel10k'
   brew 'p7zip'
   # General-purpose data compression with high compression ratio
   brew 'xz'
+  # The Unarchiver is a small and easy to use program that can unarchive many different kinds of archive files.
+  cask 'the-unarchiver'
 
   # Display directories as trees
   brew 'tree'
@@ -120,6 +124,9 @@ tap 'romkatv/powerlevel10k'
 ### }}}
 
 ### Video {{{
+  ## Converter
+  # ffmpeg
+  brew 'ffmpeg'
   ## Player
   # VLC media player
   cask 'vlc'
@@ -202,11 +209,14 @@ tap 'romkatv/powerlevel10k'
   brew 'prettier'
   # Standard Tooling for Vue.js Development
   brew 'vue-cli'
+  # The world’s fastest framework for building websites
+  brew 'hugo'
 
   ## PHP
   brew 'php'
   # Dependency Manager for PHP
   brew 'composer'
+  brew 'symfony-cli/tap/symfony-cli'
 
   ## Python
   # Python3
