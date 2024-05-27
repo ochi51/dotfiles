@@ -1,8 +1,6 @@
 # Brewfile 2022/02/01
 cask_args appdir: '/Applications'
 
-# Install and manage GUI macOS applications
-tap 'homebrew/cask'
 # Alternate versions of Casks
 tap 'homebrew/cask-versions'
 # Integrates Homebrew formulae with macOS' `launchctl` manager
@@ -14,8 +12,6 @@ tap 'buo/cask-upgrade'
 tap 'homebrew/cask-fonts'
 # AWS
 tap 'aws/tap'
-# Zsh theme Powerlevel10k
-tap 'romkatv/powerlevel10k'
 
 ### System {{{
   # Core application library for C
@@ -45,8 +41,6 @@ tap 'romkatv/powerlevel10k'
   cask 'cakebrew'
   # Mac App Store command line interface
   brew 'mas'
-  # Swiss Army Knife for macOS
-  brew 'm-cli'
 
 ### Terminal {{{
   ## Terminal Emulator
@@ -71,8 +65,12 @@ tap 'romkatv/powerlevel10k'
   brew 'zsh-lovers'
   # Completion for zsh
   brew 'zsh-completions'
+  # Fish-like autosuggestions for zsh
+  brew 'zsh-autosuggestions'
+  # Fish shell like syntax highlighting for Zsh.
+  brew 'zsh-syntax-highlighting'
   # Zsh theme
-  brew 'romkatv/powerlevel10k/powerlevel10k'
+  # brew 'romkatv/powerlevel10k/powerlevel10k'
   # Flexible and fast Zsh plugin manager
   # brew 'zinit' # sh -c "$(curl -fsSL https://git.io/zinit-install)"
 #}}}
@@ -96,8 +94,6 @@ tap 'romkatv/powerlevel10k'
   brew 'watch'
   # Simplified and community-driven man pages
   brew 'tldr'
-  # Modern replacement for `ls`
-  brew 'exa'
   # Clone of cat with syntax highlighting and Git integration  brew 'bat'
   # Simple, fast and user-friendly alternative to find
   brew 'fd'
@@ -112,7 +108,6 @@ tap 'romkatv/powerlevel10k'
 
 ### Messaging {{{
   mas 'Slack', id: 803453959
-  mas 'LINE', id: 539883307
 ### }}}
 
 ### Image {{{
@@ -127,9 +122,6 @@ tap 'romkatv/powerlevel10k'
   ## Converter
   # ffmpeg
   brew 'ffmpeg'
-  ## Player
-  # VLC media player
-  cask 'vlc'
 ### }}}
 
 ### Keyboard & Mouse {{{
@@ -137,8 +129,6 @@ tap 'romkatv/powerlevel10k'
   cask 'bettertouchtool'
   # Know your short cuts
   cask 'cheatsheet'
-  # A powerful and stable keyboard customizer for macOS
-  cask 'karabiner-elements'
 ### }}}
 
 ### Font {{{
@@ -189,15 +179,16 @@ tap 'romkatv/powerlevel10k'
   brew 'gh'
   # A framework for managing and maintaining multi-language pre-commit hooks
   brew 'pre-commit'
-  # OS X status bar application for Github
-  # cask 'gitee'
-  # The legendary Git GUI client
-  # cask 'gitkraken'
   # Graphical client for Git version control
   cask 'sourcetree'
+  # Run your GitHub Actions locally
+  brew 'act'
 ### }}}
 
 ### Programming Language {{{
+  # All in one for **env
+  brew 'anyenv'
+
   ## Node.js
   # Platform built on V8 to build network applications
   brew 'node'
@@ -211,11 +202,15 @@ tap 'romkatv/powerlevel10k'
   brew 'vue-cli'
   # The world’s fastest framework for building websites
   brew 'hugo'
+  # Local server
+  brew 'http-server'
+  brew 'nss'
 
   ## PHP
   brew 'php'
   # Dependency Manager for PHP
   brew 'composer'
+  # Symphony CLI
   brew 'symfony-cli/tap/symfony-cli'
 
   ## Python
@@ -227,16 +222,12 @@ tap 'romkatv/powerlevel10k'
   ## Ruby
   # Powerful, clean, object-oriented scripting language
   brew 'ruby'
-  # Ruby version manager
-  brew 'rbenv'
   # Compile and install Ruby for rbenv
   brew 'ruby-build'
 
   ## Golang
   # Open source programming language to build simple/reliable/efficient software
-  # brew 'golang' # git clone https://github.com/syndbg/goenv.git ~/.goenv
-  # Go version management
-  brew 'goenv'
+  brew 'golang'
 
   ## C Family
   # GNU compiler collection
@@ -251,8 +242,6 @@ tap 'romkatv/powerlevel10k'
   ## Container
   # Docker
   cask 'docker'
-  # Docker Community Edition for Mac (Edge)
-  cask 'docker-edge'
   # The lazier way to manage everything docker
   brew 'lazydocker'
 ### }}}
@@ -264,7 +253,7 @@ tap 'romkatv/powerlevel10k'
   # MySQL
   brew 'mysql'
   # PostgreSQL
-  brew 'postgresql'
+  brew 'postgresql@14'
 
   ## Key-Value DB
   # Persistent key-value database, with built-in net interface
@@ -291,10 +280,8 @@ tap 'romkatv/powerlevel10k'
 ### Other {{{
   # Google Japanese IME
   cask 'google-japanese-ime'
-  # Kindle for Mac
-  cask 'kindle'
   # Zoom
   cask 'zoom'
-  # DeepL
-  cask 'deepl'
+  # Display Menu
+  mas 'Display Menu', id: 549083868
 ### }}}}
