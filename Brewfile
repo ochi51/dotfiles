@@ -37,8 +37,6 @@ tap 'aws/tap'
   cask 'stats'
 
   ## Mac OS X
-  # Homebrew GUI App for OS X
-  cask 'cakebrew'
   # Mac App Store command line interface
   brew 'mas'
 
@@ -99,17 +97,6 @@ tap 'aws/tap'
   brew 'fd'
 ### }}}
 
-### Web {{{
-  ## Web Browser
-  cask 'google-chrome'
-  cask 'firefox'
-  cask 'microsoft-edge'
-### }}}
-
-### Messaging {{{
-  mas 'Slack', id: 803453959
-### }}}
-
 ### Image {{{
   ## Utility
   # Perl lib for reading and writing EXIF metadata
@@ -128,7 +115,7 @@ tap 'aws/tap'
   # Customize various input devices on your Mac
   cask 'bettertouchtool'
   # Know your short cuts
-  cask 'cheatsheet'
+  cask 'keyclu'
 ### }}}
 
 ### Font {{{
@@ -200,8 +187,7 @@ tap 'aws/tap'
   brew 'prettier'
   # Standard Tooling for Vue.js Development
   brew 'vue-cli'
-  # The world’s fastest framework for building websites
-  brew 'hugo'
+
   # Local server
   brew 'http-server'
   brew 'nss'
@@ -227,7 +213,9 @@ tap 'aws/tap'
 
   ## Golang
   # Open source programming language to build simple/reliable/efficient software
-  brew 'golang'
+  brew 'go'
+  # The world’s fastest framework for building websites
+  brew 'hugo'
 
   ## C Family
   # GNU compiler collection
@@ -242,8 +230,6 @@ tap 'aws/tap'
   ## Container
   # Docker
   cask 'docker'
-  # The lazier way to manage everything docker
-  brew 'lazydocker'
 ### }}}
 
 ### Database {{{
@@ -253,7 +239,7 @@ tap 'aws/tap'
   # MySQL
   brew 'mysql'
   # PostgreSQL
-  brew 'postgresql@14'
+  brew 'postgresql@16'
 
   ## Key-Value DB
   # Persistent key-value database, with built-in net interface
@@ -268,14 +254,26 @@ tap 'aws/tap'
   cask 'aws-vault'
   # AWS SAM CLI is a tool for lcal development and testing of Severless applications
   brew 'aws-sam-cli'
+  # AWS DynamoDB Local tool
+  cask 'dynamodb-local'
 
   # Tool to build, change, and version infrastructure
-  brew 'terraform'
+  #brew 'terraform'
 
   # Enables you to reproduce the CircleCI environment locally
-  brew 'circleci'
+  #brew 'circleci'
 ### }}}
 
+### Web {{{
+  ## Web Browser
+  cask 'google-chrome'
+  cask 'firefox'
+  cask 'microsoft-edge'
+### }}}
+
+### Messaging {{{
+  mas 'Slack', id: 803453959
+### }}}
 
 ### Other {{{
   # Google Japanese IME

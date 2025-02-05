@@ -5,4 +5,5 @@ JavaScript の初期設定
 
 ```.bash
 npm install -g @vue/cli
+npm install -g dynamodb-admin
 ```
