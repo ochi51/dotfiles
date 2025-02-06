@@ -97,6 +97,17 @@ tap 'aws/tap'
   brew 'fd'
 ### }}}
 
+### Web {{{
+  ## Web Browser
+  cask 'google-chrome'
+  cask 'firefox'
+  cask 'microsoft-edge'
+### }}}
+
+### Messaging {{{
+  mas 'Slack', id: 803453959
+### }}}
+
 ### Image {{{
   ## Utility
   # Perl lib for reading and writing EXIF metadata
@@ -187,7 +198,8 @@ tap 'aws/tap'
   brew 'prettier'
   # Standard Tooling for Vue.js Development
   brew 'vue-cli'
-
+  # The world’s fastest framework for building websites
+  brew 'hugo'
   # Local server
   brew 'http-server'
   brew 'nss'
@@ -213,9 +225,7 @@ tap 'aws/tap'
 
   ## Golang
   # Open source programming language to build simple/reliable/efficient software
-  brew 'go'
-  # The world’s fastest framework for building websites
-  brew 'hugo'
+  brew 'golang'
 
   ## C Family
   # GNU compiler collection
@@ -239,7 +249,7 @@ tap 'aws/tap'
   # MySQL
   brew 'mysql'
   # PostgreSQL
-  brew 'postgresql@16'
+  brew 'postgresql@14'
 
   ## Key-Value DB
   # Persistent key-value database, with built-in net interface
@@ -254,26 +264,14 @@ tap 'aws/tap'
   cask 'aws-vault'
   # AWS SAM CLI is a tool for lcal development and testing of Severless applications
   brew 'aws-sam-cli'
-  # AWS DynamoDB Local tool
-  cask 'dynamodb-local'
 
   # Tool to build, change, and version infrastructure
-  #brew 'terraform'
+  brew 'terraform'
 
   # Enables you to reproduce the CircleCI environment locally
-  #brew 'circleci'
+  brew 'circleci'
 ### }}}
 
-### Web {{{
-  ## Web Browser
-  cask 'google-chrome'
-  cask 'firefox'
-  cask 'microsoft-edge'
-### }}}
-
-### Messaging {{{
-  mas 'Slack', id: 803453959
-### }}}
 
 ### Other {{{
   # Google Japanese IME
